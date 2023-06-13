@@ -3,6 +3,7 @@ public class Main {
         App app = new App();
         app.createRandomToysFile();
         app.loadPrizeToysPool();
-        app.prizeDraw(10);
+//        app.prizeDraw(10);
+        app.start();
     }
 }

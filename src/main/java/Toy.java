@@ -12,17 +12,6 @@ public class Toy {
 
     private int dropRate;
 
-    static {
-        idCounter = 0;
-    }
-
-    public Toy(String name, int count, int dropRate) {
-        this.id = idCounter++;
-        this.name = name;
-        this.count = count;
-        this.dropRate = dropRate;
-    }
-
     public Toy(int idCounter, String name, int count, int dropRate) {
         this.id = idCounter;
         this.name = name;

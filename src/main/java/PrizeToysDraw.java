@@ -3,19 +3,27 @@ import java.util.stream.Collectors;
 
 public class PrizeToysDraw {
 
-    List<Toy> toysPool;
-    Queue<Toy> prizeToys;
+    private List<Toy> toysPool;
+    private Queue<Toy> prizeToys;
 
-    int dropRate;
+    private int dropRate;
+
+    private int idCounter;
 
     public PrizeToysDraw() {
         toysPool = new ArrayList<>();
         prizeToys = new LinkedList<>();
+        idCounter = 0;
     }
 
-    public void addToy(Toy toy) {
-        if (toy.getCount() > 0)
-            toysPool.add(toy);
+    public void addToy(String name, int count, int dropRate) {
+        if (count > 0)
+            toysPool.add(new Toy(idCounter++,name, count, dropRate));
+    }
+
+    public void addToy(int idCounter, String name, int count, int dropRate) {
+        if (count > 0)
+            toysPool.add(new Toy(idCounter, name, count, dropRate));
     }
 
     public void dropPrizeToy() {
@@ -59,8 +67,12 @@ public class PrizeToysDraw {
         String[] data = csvReadLines.split("\n");
         for (int i = 1; i < data.length; i++) {
             String[] line = data[i].split(";");
-            addToy(new Toy(Integer.parseInt(line[0]), line[1] ,Integer.parseInt(line[2]),
-                    Integer.parseInt(line[3].substring(0, line[3].length() - 1))));
+            addToy(Integer.parseInt(line[0]), line[1] ,Integer.parseInt(line[2]),
+                    Integer.parseInt(line[3].substring(0, line[3].length() - 1)));
         }
+    }
+
+    public List<Toy> getToysPool() {
+        return toysPool;
     }
 }
