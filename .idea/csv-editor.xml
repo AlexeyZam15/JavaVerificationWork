@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\afterDrawToysPool.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\afterDrawtoysPool.csv">
           <value>
             <Attribute>
@@ -10,7 +17,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\beforeDrawToysPool.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\beforeDrawtoysPool.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\toysPool.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />

@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616b7cca-1368-4077-a3e5-fd09bc1a6d58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PrizeToysDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ToysNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorkWithFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="616b7cca-1368-4077-a3e5-fd09bc1a6d58" name="Changes" comment="added Toy class model, added PrizeToysDraw module for draw prizes, added WorkWithFiles module for writing results to files, added ToysNames enumerator, added app module connecting the work of all other modules">
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrizeToysDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrizeToysDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToysNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToysNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkWithFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkWithFiles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +48,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wolfy/Downloads/IntroJavaLectures&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/wolfy/Downloads/IntroJavaLectures",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,11 +75,19 @@
       <option name="project" value="LOCAL" />
       <updated>1686518802845</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Toy class model, added PrizeToysDraw module for draw prizes, added WorkWithFiles module for writing results to files, added ToysNames enumerator, added app module connecting the work of all other modules">
+      <created>1686530228730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686530228730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added Toy class model, added PrizeToysDraw module for draw prizes, added WorkWithFiles module for writing results to files, added ToysNames enumerator, added app module connecting the work of all other modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Toy class model, added PrizeToysDraw module for draw prizes, added WorkWithFiles module for writing results to files, added ToysNames enumerator, added app module connecting the work of all other modules" />
   </component>
 </project>

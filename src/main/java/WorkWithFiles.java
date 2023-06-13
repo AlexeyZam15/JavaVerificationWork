@@ -1,14 +1,11 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.stream.Collectors;
 
 public class WorkWithFiles {
-    public static void writePrizeToy(Object object, String text) {
+    public static void writePrizeToy(Object object, String text, String filePath) {
         if (object != null)
             try (
-                    FileWriter writer = new FileWriter("prizeToys.txt", true)) {
+                    FileWriter writer = new FileWriter(filePath, true)) {
                 writer.write(object + text + "\n");
                 writer.flush();
             } catch (
@@ -17,20 +14,21 @@ public class WorkWithFiles {
             }
     }
 
-    public ArrayList<String> readLinesToArrayList(){
-        ArrayList<String> data = new ArrayList<>();
-        try(BufferedReader br = new BufferedReader(new FileReader("toysPool.csv")))
-        {
-            String s;
-            while((s=br.readLine())!=null){
-                data.add(s);
-            }
-        }
-        catch(IOException ex){
+    public static String readFile(String path) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+        return reader.lines().collect(Collectors.joining(System.lineSeparator()));
+    }
 
-            System.out.println(ex.getMessage());
+    public static String readLinesToArrayList(String filePath){
+
+        String content = null;
+        try {
+            content = readFile(filePath);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return data;
+
+        return content;
     }
 
     public static void write(String text, String filename) {

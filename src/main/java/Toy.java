@@ -23,9 +23,16 @@ public class Toy {
         this.dropRate = dropRate;
     }
 
+    public Toy(int idCounter, String name, int count, int dropRate) {
+        this.id = idCounter;
+        this.name = name;
+        this.count = count;
+        this.dropRate = dropRate;
+    }
+
     @Override
     public String toString() {
-        return name + " " + id;
+        return name + " id " + id;
     }
 
     public int getDropRate() {

@@ -31,7 +31,7 @@ public class PrizeToysDraw {
     public Toy getPrizeToy() {
         if (prizeToys.size() > 0) {
             Toy prizeToy = prizeToys.poll();
-            prizeToy.setCount(prizeToy.getCount()-1);
+            prizeToy.setCount(prizeToy.getCount() - 1);
             if (prizeToy.getCount() == 0) {
                 toysPool.remove(prizeToy);
             }
@@ -53,5 +53,14 @@ public class PrizeToysDraw {
 
     public int getDropRate() {
         return dropRate;
+    }
+
+    public void addingFromCsv(String csvReadLines) {
+        String[] data = csvReadLines.split("\n");
+        for (int i = 1; i < data.length; i++) {
+            String[] line = data[i].split(";");
+            addToy(new Toy(Integer.parseInt(line[0]), line[1] ,Integer.parseInt(line[2]),
+                    Integer.parseInt(line[3].substring(0, line[3].length() - 1))));
+        }
     }
 }
